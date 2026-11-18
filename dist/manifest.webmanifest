@@ -1,0 +1,20 @@
+{
+  "name": "MISHIRO — Aventura matemática",
+  "short_name": "MISHIRO",
+  "description": "Sitio informativo del videojuego educativo MISHIRO, sus biomas, mecánicas, universo y equipo creador.",
+  "lang": "es-MX",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b1220",
+  "theme_color": "#101a2e",
+  "categories": ["games", "education", "kids"],
+  "icons": [
+    { "src": "./icons/mishiro-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./icons/mishiro-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Conocer el proyecto", "short_name": "Proyecto", "url": "./#proyecto", "icons": [{ "src": "./icons/mishiro-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0c1628" />
+    <meta name="description" content="Conoce MISHIRO, un videojuego educativo de aventura y plataformas protagonizado por un gato explorador." />
+    <meta property="og:title" content="MISHIRO — Jugar, aprender, avanzar" />
+    <meta property="og:description" content="Un videojuego 2D que integra aventura, exploración y retos matemáticos." />
+    <meta property="og:type" content="website" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/mishiro-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./icons/mishiro-192.png" />
+    <link rel="stylesheet" href="./tailwind.css?v=9" />
+    <link rel="stylesheet" href="./styles.css?v=9" />
+    <title>MISHIRO — Videojuego educativo de aventura</title>
+  </head>
+  <body class="bg-night text-paper antialiased selection:bg-gold selection:text-night">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" id="inicio">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="MISHIRO, página principal">
+          <span class="brand-icon" aria-hidden="true"><img src="./icons/mishiro-192.png" alt="" width="49" height="49" /></span>
+          <span><strong>MISHIRO</strong><small>Jugar · Aprender · Avanzar</small></span>
+        </a>
+        <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú"><span></span><span></span></button>
+        <div class="nav-links" id="navLinks">
+          <a href="#universo">El videojuego</a><a href="#experiencia">La experiencia</a><a href="#aprendizaje">Aprendizaje</a><a href="#creadores">Creadores</a><a href="#proyecto">El proyecto</a>
+        </div>
+        <button class="install-button hidden" id="installButton" type="button">Instalar sitio</button>
+      </nav>
+    </header>
+
+    <main id="contenido" class="relative overflow-x-clip">
+      <section class="hero relative">
+        <div class="hero-grid container">
+          <div class="hero-copy reveal">
+            <div class="status-chip"><span></span> PROYECTO EN DESARROLLO</div>
+            <p class="overline">UNA AVENTURA EDUCATIVA EN PIXEL ART</p>
+            <h1>Aprender también<br />puede ser una <em>aventura.</em></h1>
+            <p class="hero-lead">MISHIRO es un videojuego 2D de exploración y plataformas donde las matemáticas no detienen el viaje: ayudan a desbloquear nuevos poderes.</p>
+            <div class="hero-actions"><a class="primary-link" href="#universo">Conoce a Mishiro <span>↓</span></a><a class="secondary-link" href="#creadores">Conoce al equipo</a></div>
+            <ul class="hero-facts" aria-label="Características principales"><li><span>01</span><strong>Aventura 2D</strong></li><li><span>02</span><strong>Retos matemáticos</strong></li><li><span>03</span><strong>Pixel art</strong></li></ul>
+          </div>
+          <div class="hero-art reveal" aria-label="Ilustración estilizada de Mishiro explorando un escenario">
+            <div class="moon"></div><div class="stars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+            <div class="ruin ruin-left"><span></span><span></span></div><div class="ruin ruin-right"><span></span><span></span></div>
+            <div class="golden-fish fish-one"><i></i></div><div class="golden-fish fish-two"><i></i></div>
+            <img class="mishiro-character" src="./assets/mishiro-personaje.png" alt="" width="911" height="1727" decoding="async" fetchpriority="high" />
+            <div class="ground"><span></span></div><div class="art-caption"><span>CAPÍTULO I</span><strong>Las ruinas del pez dorado</strong></div>
+          </div>
+        </div>
+        <div class="marquee" aria-hidden="true"><div>EXPLORAR <i>◆</i> APRENDER <i>◆</i> DESCUBRIR <i>◆</i> AVANZAR <i>◆</i> EXPLORAR <i>◆</i> APRENDER <i>◆</i> DESCUBRIR <i>◆</i> AVANZAR <i>◆</i></div></div>
+      </section>
+
+      <section class="intro section" id="universo">
+        <div class="container intro-grid">
+          <div class="section-heading reveal"><span class="section-number">01 / EL UNIVERSO</span><h2>Un pequeño héroe.<br />Una gran misión.</h2></div>
+          <div class="intro-copy reveal"><p class="lead-paragraph">Mishiro es un gato aventurero que recorre diferentes biomas para recuperar <strong>peces dorados</strong>.</p><p>En el camino debe superar plataformas, evitar obstáculos, enfrentar enemigos y resolver desafíos matemáticos. Cada descubrimiento aporta experiencia y cada reto abre una oportunidad para obtener mejores habilidades.</p><p>Las capturas del prototipo muestran tres ambientes jugables con identidad propia: bosque luminoso, bosque otoñal y cordillera nevada.</p></div>
+        </div>
+        <div class="world-cards container">
+          <article class="world-card day-forest reveal group transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-950/10"><figure class="world-image"><img class="transition-transform duration-500 group-hover:scale-[1.03]" src="./assets/bioma-nivel-1.png" alt="Captura del nivel 1 de MISHIRO en el bosque luminoso" width="1672" height="941" loading="lazy" decoding="async" /></figure><div><span>BIOMA 01 · NIVEL 1</span><h3>Bosque luminoso</h3><p>Cielo azul, árboles, hongos, terreno cubierto de hierba y enemigos tipo goblin.</p></div></article>
+          <article class="world-card sunset-forest reveal group transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-950/10"><figure class="world-image"><img class="transition-transform duration-500 group-hover:scale-[1.03]" src="./assets/bioma-nivel-2.png" alt="Captura del nivel 2 de MISHIRO en el bosque del ocaso" width="1669" height="942" loading="lazy" decoding="async" /></figure><div><span>BIOMA 02 · NIVEL 2</span><h3>Bosque del ocaso</h3><p>Vegetación otoñal, plataformas elevadas, escaleras y enemigos esqueleto.</p></div></article>
+          <article class="world-card snowy-mountains reveal group transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-950/10"><figure class="world-image"><img class="transition-transform duration-500 group-hover:scale-[1.03]" src="./assets/bioma-nivel-3.png" alt="Captura del nivel 3 de MISHIRO en la cordillera helada" width="1668" height="943" loading="lazy" decoding="async" /></figure><div><span>BIOMA 03 · NIVEL 3</span><h3>Cordillera helada</h3><p>Plataformas de roca y nieve, pinos, cristales azules y checkpoints luminosos.</p></div></article>
+        </div>
+      </section>
+
+      <section class="experience section" id="experiencia">
+        <div class="container">
+          <div class="experience-top reveal"><div><span class="section-number">02 / LA EXPERIENCIA</span><h2>Así se vive MISHIRO</h2></div><p>Una aventura que premia la curiosidad, la práctica y el deseo de seguir avanzando.</p></div>
+          <div class="experience-flow">
+            <article class="flow-item reveal"><span class="flow-number">01</span><div class="flow-icon compass-icon">✦</div><h3>Explora</h3><p>Recorre escenarios, encuentra rutas y descubre objetos escondidos.</p></article>
+            <article class="flow-item reveal"><span class="flow-number">02</span><div class="flow-icon battle-icon">×</div><h3>Supera retos</h3><p>Enfrenta enemigos, obstáculos y desafíos de plataformas.</p></article>
+            <article class="flow-item reveal"><span class="flow-number">03</span><div class="flow-icon learn-icon">?</div><h3>Resuelve</h3><p>Completa tu experiencia y responde una pregunta matemática.</p></article>
+            <article class="flow-item reveal"><span class="flow-number">04</span><div class="flow-icon power-icon">◆</div><h3>Desbloquea</h3><p>Obtén un poder y úsalo para continuar tu recorrido.</p></article>
+          </div>
+          <div class="features-grid">
+            <article class="feature-large reveal"><div class="feature-copy"><span class="tag">COLECCIONABLE PRINCIPAL</span><h3>Los peces dorados</h3><p>Cada nivel plantea una cantidad propia de peces. Reunirlos recompensa la exploración de cada bioma.</p><strong>◆ <small>POR DESCUBRIR</small></strong></div><div class="fish-collection" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+            <article class="feature-small checkpoint-feature reveal"><span class="feature-symbol">◇</span><div><span class="tag">PROGRESO</span><h3>Checkpoints</h3><p>Puntos seguros permiten retomar el camino después de un tropiezo.</p></div></article>
+            <article class="feature-small power-feature reveal"><span class="feature-symbol">✦</span><div><span class="tag">RECOMPENSAS</span><h3>Nuevos poderes</h3><p>El aprendizaje se transforma en habilidades útiles para la aventura.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning section" id="aprendizaje">
+        <div class="container learning-grid">
+          <div class="learning-visual reveal" aria-hidden="true"><div class="quiz-window"><span>RETO DE SABIDURÍA</span><strong>¿Cuánto es 8 × 7?</strong><div><i>48</i><i>54</i><i class="correct">56</i><i>64</i></div></div><span class="orbit orbit-one">＋</span><span class="orbit orbit-two">÷</span><span class="orbit orbit-three">×</span></div>
+          <div class="learning-copy reveal"><span class="section-number">03 / APRENDER JUGANDO</span><h2>Equivocarse no detiene la aventura.</h2><p>Cuando la barra de experiencia se completa, aparece un reto matemático. Una respuesta correcta entrega un poder especial; una respuesta incorrecta concede un poder básico.</p><blockquote>El jugador siempre puede continuar. El error se convierte en parte del aprendizaje, no en un castigo.</blockquote><div class="reward-row"><span><i class="correct-dot"></i><strong>Respuesta correcta</strong><small>Poder especial</small></span><span><i></i><strong>Buen intento</strong><small>Poder básico</small></span></div></div>
+        </div>
+      </section>
+
+      <section class="creators section" id="creadores">
+        <div class="container">
+          <div class="creators-heading reveal"><div><span class="section-number">04 / LOS CREADORES</span><h2>El equipo detrás de MISHIRO</h2></div><p>MISHIRO nace como un proyecto académico desarrollado por estudiantes de la Universidad Tecnológica del Oriente de Michoacán.</p></div>
+          <div class="creator-grid">
+            <article class="creator-card reveal"><div class="avatar avatar-one"><span>AC</span><i></i></div><div class="creator-info"><span>INTEGRANTE DEL PROYECTO</span><h3>Armando Iván<br />Castillo Ramírez</h3><p>Equipo creador de MISHIRO</p></div><span class="creator-index">01</span></article>
+            <article class="creator-card reveal"><div class="avatar avatar-two"><span>JC</span><i></i></div><div class="creator-info"><span>INTEGRANTE DEL PROYECTO</span><h3>Jesús D.<br />Chávez Rojas</h3><p>Equipo creador de MISHIRO</p></div><span class="creator-index">02</span></article>
+            <article class="creator-card reveal"><div class="avatar avatar-three"><span>GR</span><i></i></div><div class="creator-info"><span>INTEGRANTE DEL PROYECTO</span><h3>Gerardo I.<br />Ruiz Soto</h3><p>Equipo creador de MISHIRO</p></div><span class="creator-index">03</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="project section" id="proyecto">
+        <div class="container project-grid">
+          <div class="project-copy reveal"><span class="section-number">05 / EL PROYECTO</span><h2>Una idea construida entre juego, tecnología y educación.</h2><p>MISHIRO integra diseño de videojuegos, desarrollo de software e investigación académica. El prototipo visible reúne movimiento, combate, barras de vida y energía, peces coleccionables, cofres, enemigos, puntuación y checkpoints.</p><div class="project-status"><span>ESTADO ACTUAL</span><strong>Prototipo en desarrollo</strong><p>El concepto, las mecánicas, tres biomas y la identidad visual cuentan con evidencia observable. La integración y validación completa continúan en proceso.</p></div></div>
+          <div class="tech-panel reveal"><span class="panel-label">IDENTIDAD TÉCNICA</span><dl><div><dt>Motor</dt><dd>Godot Engine</dd></div><div><dt>Lenguaje</dt><dd>GDScript</dd></div><div><dt>Arte</dt><dd>Piskel · Pixel art</dd></div><div><dt>Plataforma inicial</dt><dd>PC · Windows</dd></div><div><dt>Formato</dt><dd>Aventura 2D</dd></div><div><dt>Público principal</dt><dd>8 a 12 años</dd></div></dl></div>
+        </div>
+        <div class="validation container reveal"><div class="validation-copy"><span class="tag">VALIDACIÓN INICIAL · SEPTIEMBRE 2026</span><h3>El concepto despertó interés.</h3><p>Una encuesta exploratoria, realizada antes del cambio de nombre a MISHIRO, permitió conocer la aceptación inicial de la propuesta. Estos datos describen la muestra consultada; no representan todavía una validación comercial ni educativa definitiva.</p></div><div class="validation-stats"><div><strong>42</strong><span>participantes</span></div><div><strong>3.96<small>/5</small></strong><span>media global</span></div><div><strong>76%</strong><span>respuestas positivas</span></div></div></div>
+      </section>
+
+      <section class="closing"><div class="container closing-inner reveal"><div class="closing-mark" aria-hidden="true"><img src="./icons/mishiro-512.png" alt="" width="128" height="128" /></div><span class="section-number">EL VIAJE APENAS COMIENZA</span><h2>Jugar. Aprender.<br /><em>Avanzar.</em></h2><p>Una aventura donde cada desafío puede convertirse en un nuevo poder.</p><a class="primary-link" href="#inicio">Volver al inicio <span>↑</span></a></div></section>
+    </main>
+
+    <footer class="footer"><div class="container footer-grid"><div class="brand footer-brand"><span class="brand-icon" aria-hidden="true"><img src="./icons/mishiro-192.png" alt="" width="40" height="40" /></span><span><strong>MISHIRO</strong><small>Proyecto académico · 2026</small></span></div><p>Videojuego educativo de aventura y plataformas en 2D.</p><div class="network-status" id="networkStatus"><i></i><span>Disponible en línea</span></div></div></footer>
+    <script src="./app.js?v=9" defer></script>
+  </body>
+</html>
